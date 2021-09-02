@@ -18,6 +18,11 @@ body {
   position: relative;
 }
 
+/*
+a:hover {
+  border-bottom: black 2px solid;
+}
+*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,11 +76,17 @@ header {
 
 .seattle span {
   font-size: 0.75rem;
+  color: grey;
 }
 
 nav {
   margin-top: 30px;
+  background-color: #f7f7f7;
   width: 100%;
+  font-size: 0.8rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 nav ul {
@@ -93,7 +104,6 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px;
-  height: 40px;
   padding: 0px;
 }
 
@@ -103,29 +113,22 @@ nav ul li {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  height: 100%;
 }
 
-#navbar ul a {
+.nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
+  height: 40px;
   text-decoration: none;
   color: black;
-  font-size: 0.8rem;
-  height: 100%;
   border: 1px solid transparent;
 }
 
-a:hover {
-  border-bottom: black 2px solid;
-}
-
-#home {
+.nav-links:hover {
   border-bottom: black 2px solid;
 }
 
@@ -177,7 +180,7 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: black 1px solid;
+  border-right: #777777 1px solid;
   margin-top: 12px;
   margin-bottom: 10px;
 }
@@ -186,14 +189,19 @@ footer ul {
   font-size: 0.75rem;
 }
 
-.footer-links {
+.footer-info {
   font-size: 0.75rem;
   padding-left: 20px;
+  font-weight: bold;
 }
 
-.footer-links a {
+.foot-links {
   text-decoration: none;
   color: black;
+}
+
+.foot-links:hover {
+  text-decoration: underline;
 }
 
 .copyright {

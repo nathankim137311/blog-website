@@ -32,45 +32,40 @@ header {
 
 .seattle span {
   font-size: 0.75rem;
+  color: grey;
 }
 
 nav {
   margin-top: 30px;
-
+  background-color: $white;
   width: 100%;
+  font-size: 0.8rem;
+  height: fit-content;
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin: 0px;
-    height: 40px;
     padding: 0px;
     li {
       display: inherit;
       align-items: center;
       list-style: none;
-      height: 100%;
     }
   }
 }
 
-#navbar ul a {
+.nav-links {
   display: flex;
   align-items: center;
-  list-style: none;
+  height: 40px;
   text-decoration: none;
   color: black;
-  font-size: 0.8rem;
-  height: 100%;
   border: 1px solid transparent;
 }
 
-a:hover {
-  border-bottom: black 2px solid;
-}
-
-#home {
+.nav-links:hover {
   border-bottom: black 2px solid;
 }
 
