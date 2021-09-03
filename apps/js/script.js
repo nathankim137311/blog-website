@@ -13,4 +13,5 @@ function stickyBar () {
     navbar.classList.remove("sticky");
   }
 }
-
+//getElementsByClassName returns an array and not an element
+//window sizing 
