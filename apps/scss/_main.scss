@@ -2,16 +2,38 @@
 
 @media screen and (min-width: 768px) {
   .main-container {
-    margin: 0 100px;
+    width: 65rem;
   }
 }
 
 //Responsive Phone screen
-@media screen and (min-width: 360px) {
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
   .main-container {
-    margin: 0 50px;
-    p {
-      font-size: 0.8rem;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    border: red 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .blog-heading {
+    display: inherit;
+    justify-content: start;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px 0px 30px 0px;
+    span {
+      display: inherit;
+      align-items: center;
     }
+  }
+  .para-container {
+    width: 90%;
+    font-size: 1em;
+    margin-bottom: 50px;
   }
 }
