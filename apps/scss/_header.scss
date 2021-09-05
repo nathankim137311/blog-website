@@ -1,4 +1,158 @@
 @import "variables";
+//Desktop screen
+@media only screen and (min-width: 1024px) {
+  .menu-bar {
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .menu-bar button {
+    margin-right: 20px;
+    padding: 0px 10px;
+    border: black 1.5px solid;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    height: 40px;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: black;
+    color: $white;
+  }
+
+  .menu-bar button:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: black;
+  }
+
+  .menu-bar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-bar {
+    margin-right: 40px;
+  }
+
+  #search {
+    height: 40px;
+    width: 450px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 90px 10px 30px 10px;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 4px 4px black;
+    position: relative;
+    background-color: $white;
+    span {
+      font-size: 1.5rem;
+    }
+    h1 {
+      margin: 0px;
+      padding: 0px;
+      font-size: 2.5rem;
+      font-family: "Space Mono", monospace;
+    }
+    .img-caption {
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+  }
+
+  .seattle span {
+    display: block;
+    font-size: 0.75rem;
+    color: grey;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    background-color: $white;
+    width: 100%;
+    font-size: 0.8rem;
+    height: fit-content;
+    z-index: 1;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #dadada;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      li {
+        display: inherit;
+        align-items: center;
+        list-style: none;
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+  }
+
+  .nav-links:hover {
+    border-bottom: black 2px solid;
+  }
+
+  //Placeholder
+  #home {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    border-bottom: black 2px solid;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 90px;
+  }
+
+  .search-bar {
+    position: absolute;
+    left: 50px;
+  }
+}
 
 //Responsive Tablet screen
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

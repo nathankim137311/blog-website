@@ -1,5 +1,50 @@
 @import "variables";
 
+//Desktop screen
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .para-container {
+    width: 40%;
+    padding: 30px 0px 30px 0px;
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 2.2em;
+    font-family: "Open Sans", serif;
+  }
+
+  #social-list {
+    height: fit-content;
+    position: fixed;
+    top: 400px;
+    left: 50px;
+    ul {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column;
+      list-style: none;
+      font-size: 0.8rem;
+      padding: 5px;
+      margin: 0 5px;
+      a {
+        text-decoration: none;
+        color: grey;
+        a:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 //Responive Tablet screen
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main-container {
