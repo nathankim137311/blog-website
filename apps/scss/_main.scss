@@ -1,22 +1,26 @@
 @import "variables";
 
-@media screen and (min-width: 768px) {
+//Responive Tablet screen
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main-container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     position: relative;
   }
 
   .para-container {
-    width: 85%;
-    padding: 30px;
-    font-size: 0.9em;
+    width: 70%;
+    padding: 30px 0px 30px 0px;
+    font-size: 1em;
+    text-align: justify;
     margin-bottom: 50px;
     margin-top: 50px;
+    line-height: 1.8em;
+    font-family: "Open Sans", serif;
   }
 
-  .social-list {
+  #social-list {
     height: fit-content;
     position: absolute;
     left: 10px;
@@ -32,7 +36,7 @@
       margin: 0 5px;
       a {
         text-decoration: none;
-        color: black;
+        color: grey;
         a:hover {
           cursor: pointer;
           text-decoration: underline;
@@ -45,7 +49,7 @@
 //Responsive Phone screen
 @media only screen and (max-width: 767px),
   only screen and (max-device-width: 767px) {
-  .social-list {
+  #social-list {
     display: none;
   }
 
@@ -58,7 +62,10 @@
   .para-container {
     width: 90%;
     font-size: 0.85em;
+    line-height: 1.9em;
+    text-align: justify;
     margin-bottom: 50px;
     margin-top: 50px;
+    font-family: "Open Sans", serif;
   }
 }

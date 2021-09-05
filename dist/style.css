@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .menu-bar {
     position: fixed;
     top: 0px;
@@ -381,25 +381,28 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     position: relative;
   }
   .para-container {
-    width: 85%;
-    padding: 30px;
-    font-size: 0.9em;
+    width: 70%;
+    padding: 30px 0px 30px 0px;
+    font-size: 1em;
+    text-align: justify;
     margin-bottom: 50px;
     margin-top: 50px;
+    line-height: 1.8em;
+    font-family: "Open Sans", serif;
   }
-  .social-list {
+  #social-list {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -407,7 +410,7 @@ body {
     left: 10px;
     top: 100px;
   }
-  .social-list ul {
+  #social-list ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -426,18 +429,18 @@ body {
     padding: 5px;
     margin: 0 5px;
   }
-  .social-list ul a {
+  #social-list ul a {
     text-decoration: none;
-    color: black;
+    color: grey;
   }
-  .social-list ul a a:hover {
+  #social-list ul a a:hover {
     cursor: pointer;
     text-decoration: underline;
   }
 }
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
-  .social-list {
+  #social-list {
     display: none;
   }
   .main-container {
@@ -452,12 +455,15 @@ body {
   .para-container {
     width: 90%;
     font-size: 0.85em;
+    line-height: 1.9em;
+    text-align: justify;
     margin-bottom: 50px;
     margin-top: 50px;
+    font-family: "Open Sans", serif;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
     width: 100%;
     display: -webkit-box;
