@@ -47,6 +47,7 @@ body {
     border: black 1.5px solid;
     border-radius: 3px;
     font-size: 0.8rem;
+    font-weight: bold;
     height: 40px;
     font-family: "IBM Plex Mono", monospace;
     background-color: black;
@@ -67,13 +68,31 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 30px;
   }
   .search-bar {
     margin-right: 40px;
+    height: 30px;
+  }
+  .search-bar button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: black;
+    color: #f7f7f7;
   }
   #search {
-    height: 40px;
-    width: 450px;
+    width: 300px;
+    height: 30px;
   }
   header {
     display: -webkit-box;
@@ -592,6 +611,9 @@ body {
     margin-top: 50px;
     line-height: 2.2em;
     font-family: "Open Sans", serif;
+  }
+  .section {
+    font-size: 2rem;
   }
   #social-list {
     height: -webkit-fit-content;
