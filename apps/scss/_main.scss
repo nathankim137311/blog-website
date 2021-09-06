@@ -4,9 +4,37 @@
 @media only screen and (min-width: 1024px) {
   .main-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     position: relative;
+  }
+
+  .content-headings {
+    height: fit-content;
+    padding: 10px;
+    width: 175px;
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      text-align: left;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.1em;
+    }
+  }
+
+  #side-card {
+    position: sticky;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 250px;
+    top: 150px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
   }
 
   .para-container {
@@ -18,17 +46,12 @@
     margin-top: 50px;
     line-height: 2.2em;
     font-family: "Open Sans", serif;
+    border-bottom: 4px $orange solid;
   }
 
-  .section {
-    font-size: 2rem;
-  }
-
-  #social-list {
+  .social-list {
     height: fit-content;
-    position: fixed;
-    top: 400px;
-    left: 50px;
+    width: 175px;
     ul {
       display: flex;
       justify-content: start;
@@ -39,8 +62,11 @@
       padding: 5px;
       margin: 0 5px;
       a {
+        display: block;
+        width: 100%;
         text-decoration: none;
-        color: grey;
+        color: blue;
+        font-size: 1.1em;
         a:hover {
           cursor: pointer;
           text-decoration: underline;

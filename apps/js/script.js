@@ -30,31 +30,10 @@ viewWidth.addEventListener('change', event => {
   }
 })
 
-//list of links dissappear 
+//table of contents and list of links appears 
+
+//variables 
+const sideCard = document.getElementById("side-card"); 
+console.log(window.pageYOffset)
 
 //link list headers and paragraph headers
-
-const newUl = document.createElement("ul");
-const newLi = document.createElement("li");
-const newA = document.createElement("a");
-
-newUl.appendChild(newLi);
-newLi.appendChild(newA); 
-
-const list = document.getElementById("content-headings");
-list.appendChild(newUl); 
-
-const section = document.querySelectorAll('h3').length; 
-const headingText = document.getElementById("content-headings"); 
-
-function generateListItems () {
-  let newUl = document.createElement("ul");
-  let list = document.getElementById("content-headings");
-  newUl.appendChild(newLi);
-  for (let i = 0; i < section; i++) {
-    let newLi = document.createElement("li");
-    let newA = document.createElement("a");
-    newLi.appendChild(newA);
-    list.appendChild(newUl);
-  }
-}

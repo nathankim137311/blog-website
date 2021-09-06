@@ -24,14 +24,14 @@
     font-weight: bold;
     height: 40px;
     font-family: "IBM Plex Mono", monospace;
-    background-color: black;
+    background-color: $navyblue;
     color: $white;
   }
 
   .menu-bar button:hover {
     cursor: pointer;
     background-color: $white;
-    color: black;
+    color: $navyblue;
   }
 
   .menu-bar form {
@@ -53,7 +53,7 @@
     height: 30px;
     width: 30px;
     padding: 5px;
-    background-color: black;
+    background-color: $navyblue;
     color: $white;
   }
 
@@ -80,7 +80,7 @@
     width: 400px;
     height: 200px;
     border-radius: 3px;
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 4px $navyblue;
     position: relative;
     background-color: $white;
     span {
@@ -106,6 +106,7 @@
   }
 
   nav {
+    margin-top: 50px;
     background-color: $white;
     width: 100%;
     font-size: 0.8rem;
@@ -138,7 +139,7 @@
   }
 
   .nav-links:hover {
-    border-bottom: black 2px solid;
+    border-bottom: $navyblue 2px solid;
   }
 
   //Placeholder
@@ -149,12 +150,12 @@
     text-decoration: none;
     color: black;
     border: 1px solid transparent;
-    border-bottom: black 2px solid;
+    border-bottom: $navyblue 2px solid;
   }
 
   .sticky {
     position: fixed;
-    top: 60px;
+    top: 10px;
     width: 100%;
   }
 

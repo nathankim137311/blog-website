@@ -50,13 +50,13 @@ body {
     font-weight: bold;
     height: 40px;
     font-family: "IBM Plex Mono", monospace;
-    background-color: black;
+    background-color: #06062a;
     color: #f7f7f7;
   }
   .menu-bar button:hover {
     cursor: pointer;
     background-color: #f7f7f7;
-    color: black;
+    color: #06062a;
   }
   .menu-bar form {
     display: -webkit-box;
@@ -87,7 +87,7 @@ body {
     height: 30px;
     width: 30px;
     padding: 5px;
-    background-color: black;
+    background-color: #06062a;
     color: #f7f7f7;
   }
   #search {
@@ -127,8 +127,8 @@ body {
     width: 400px;
     height: 200px;
     border-radius: 3px;
-    -webkit-box-shadow: 4px 4px black;
-            box-shadow: 4px 4px black;
+    -webkit-box-shadow: 4px 4px #06062a;
+            box-shadow: 4px 4px #06062a;
     position: relative;
     background-color: #f7f7f7;
   }
@@ -152,6 +152,7 @@ body {
     margin-bottom: 30px;
   }
   nav {
+    margin-top: 50px;
     background-color: #f7f7f7;
     width: 100%;
     font-size: 0.8rem;
@@ -199,7 +200,7 @@ body {
     border: 1px solid transparent;
   }
   .nav-links:hover {
-    border-bottom: black 2px solid;
+    border-bottom: #06062a 2px solid;
   }
   #home {
     display: -webkit-box;
@@ -212,11 +213,11 @@ body {
     text-decoration: none;
     color: black;
     border: 1px solid transparent;
-    border-bottom: black 2px solid;
+    border-bottom: #06062a 2px solid;
   }
   .sticky {
     position: fixed;
-    top: 60px;
+    top: 10px;
     width: 100%;
   }
   .sticky + .content {
@@ -596,11 +597,44 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     width: 100%;
     position: relative;
+  }
+  .content-headings {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    width: 175px;
+  }
+  .content-headings ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+  .content-headings a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+  }
+  #side-card {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 250px;
+    top: 150px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
   }
   .para-container {
     width: 40%;
@@ -611,19 +645,15 @@ body {
     margin-top: 50px;
     line-height: 2.2em;
     font-family: "Open Sans", serif;
+    border-bottom: 4px #ff533d solid;
   }
-  .section {
-    font-size: 2rem;
-  }
-  #social-list {
+  .social-list {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    position: fixed;
-    top: 400px;
-    left: 50px;
+    width: 175px;
   }
-  #social-list ul {
+  .social-list ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,11 +672,14 @@ body {
     padding: 5px;
     margin: 0 5px;
   }
-  #social-list ul a {
+  .social-list ul a {
+    display: block;
+    width: 100%;
     text-decoration: none;
-    color: grey;
+    color: blue;
+    font-size: 1.1em;
   }
-  #social-list ul a a:hover {
+  .social-list ul a a:hover {
     cursor: pointer;
     text-decoration: underline;
   }
@@ -753,7 +786,7 @@ body {
     padding: 0px;
   }
   .footer-container {
-    width: 75%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -764,6 +797,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: black;
   }
   .footer-titles {
     width: 165px;
@@ -778,6 +812,7 @@ body {
     border-right: #777777 1px solid;
     margin-top: 12px;
     margin-bottom: 10px;
+    color: #f7f7f7;
   }
   .footer-titles span {
     font-size: 0.75rem;
@@ -789,7 +824,7 @@ body {
   }
   .foot-links {
     text-decoration: none;
-    color: black;
+    color: #f7f7f7;
   }
   .foot-links:hover {
     text-decoration: underline;
